@@ -14,6 +14,14 @@
   :ensure t
   :config (evil-mode))
 
+;; org mode
+(use-package org
+  :ensure t)
+;; following three key bindings are recommended in org mode manual, section 1.3
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-store-agenda)
+(global-set-key (kbd "C-c c") 'org-store-capture)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -30,3 +38,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; scroll bar
+(scroll-bar-mode -1)  ; disable scroll bar
