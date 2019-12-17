@@ -45,3 +45,8 @@
 
 ;; scroll bar
 (scroll-bar-mode -1)  ; disable scroll bar
+
+;; increase the M-x key binding sugestion display time to 10 seconds
+;; default is 2 seconds
+;; set it to nil if you don't want to see it
+(setq suggest-key-bindings 10)
