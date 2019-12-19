@@ -24,6 +24,8 @@
 ;; TODO workflow states
 (setq org-todo-keywords
   '((sequence "TODO" "DOING" "SOMEDAY" "WAITING" "|" "DONE" "CANCELLED")))
+;; default agenda files list
+(setq org-agenda-files '("~/Dropbox/Notes"))
 
 
 (custom-set-variables
