@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-c c") 'org-store-capture)
 ;; TODO workflow states
 (setq org-todo-keywords
-  '((sequence "TODO" "SOMEDAY" "|" "DONE")))
+  '((sequence "TODO" "DOING" "SOMEDAY" "WAITING" "|" "DONE" "CANCELLED")))
 
 
 (custom-set-variables
