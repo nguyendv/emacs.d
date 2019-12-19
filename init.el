@@ -50,3 +50,6 @@
 ;; default is 2 seconds
 ;; set it to nil if you don't want to see it
 (setq suggest-key-bindings 10)
+
+;; turn on visual line moe
+(global-visual-line-mode t)
