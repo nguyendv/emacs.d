@@ -25,7 +25,8 @@
 (setq org-todo-keywords
   '((sequence "TODO" "DOING" "SOMEDAY" "WAITING" "|" "DONE" "CANCELLED")))
 ;; default agenda files list
-(setq org-agenda-files '("~/Dropbox/Notes"))
+(setq org-agenda-files
+      (directory-files-recursively "~/Dropbox/Notes" "\.org$"))
 
 
 (custom-set-variables
