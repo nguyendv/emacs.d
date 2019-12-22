@@ -56,3 +56,7 @@
 
 ;; turn on visual line moe
 (global-visual-line-mode t)
+
+;; Set relative line number
+(global-display-line-numbers-mode t)
+(setq display-line-numbers-type 'relative)
