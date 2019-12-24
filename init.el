@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-c c") 'org-store-capture)
 ;; TODO workflow states
 (setq org-todo-keywords
-  '((sequence "TODO" "DOING" "SOMEDAY" "WAITING" "|" "DONE" "CANCELLED")))
+  '((sequence "TODO" "DOING" "WAITING" "|" "SOMEDAY" "DONE" "CANCELLED")))
 ;; default agenda files list
 (setq org-agenda-files
       (directory-files-recursively "~/Dropbox/Notes" "\.org$"))
