@@ -21,9 +21,14 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c a") 'org-store-agenda)
 (global-set-key (kbd "C-c c") 'org-store-capture)
-;; TODO workflow states
+;; TODO workflow keywords 
 (setq org-todo-keywords
-  '((sequence "TODO" "DOING" "WAITING" "|" "SOMEDAY" "DONE" "CANCELLED")))
+      '((sequence "TODO(t)" "DOING(i)" "|" "SOMEDAY(s)" "DONE(d)" "BLOCKED(b)")
+	(sequence "LEARNING(2)" "|" "LEARNT(3)")))
+;; TODO keyword colors
+(setq org-todo-keyword-faces
+      '(("DOING" . "yellow") ("LEARNING" . "yellow")
+	("BLOCKED" . "red") ("SOMEDAY" . "cyan")))
 ;; default agenda files list
 (setq org-agenda-files
       (directory-files-recursively "~/Dropbox/Notes" "\.org$"))
