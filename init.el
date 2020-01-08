@@ -23,11 +23,11 @@
 (global-set-key (kbd "C-c c") 'org-store-capture)
 ;; TODO workflow keywords 
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "DOING(i)" "|" "SOMEDAY(s)" "DONE(d)" "BLOCKED(b)")
+      '((sequence "INBOX(i) TODO(t)" "DOING(o)" "|" "SOMEDAY(s)" "DONE(d)" "BLOCKED(b)")
 	(sequence "LEARNING(2)" "|" "LEARNT(3)")))
 ;; TODO keyword colors
 (setq org-todo-keyword-faces
-      '(("DOING" . "yellow") ("LEARNING" . "yellow")
+      '(("INBOX" . "purple") ("DOING" . "yellow") ("LEARNING" . "yellow")
 	("BLOCKED" . "red") ("SOMEDAY" . "cyan")))
 ;; default agenda files list
 (setq org-agenda-files
