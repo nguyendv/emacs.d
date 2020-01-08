@@ -23,7 +23,7 @@
 (global-set-key (kbd "C-c c") 'org-store-capture)
 ;; TODO workflow keywords 
 (setq org-todo-keywords
-      '((sequence "INBOX(i) TODO(t)" "DOING(o)" "|" "SOMEDAY(s)" "DONE(d)" "BLOCKED(b)")
+      '((sequence "INBOX(i)" "TODO(t)" "DOING(o)" "WRITING(w)" "|" "DONE(d)" "SOMEDAY(s)"  "BLOCKED(b)")
 	(sequence "LEARNING(2)" "|" "LEARNT(3)")))
 ;; TODO keyword colors
 (setq org-todo-keyword-faces
