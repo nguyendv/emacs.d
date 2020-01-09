@@ -19,7 +19,7 @@
   :ensure t
   :defer t)
 
-;; which-key
+;; which-key, which list available keys after a prefix
 (use-package which-key
   :ensure t
   :config (which-key-mode))
