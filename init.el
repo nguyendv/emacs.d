@@ -14,6 +14,16 @@
   :ensure t
   :config (evil-mode))
 
+;; spacemacs-theme
+(use-package spacemacs-theme
+  :ensure t
+  :defer t)
+
+;; which-key
+(use-package which-key
+  :ensure t
+  :config (which-key-mode))
+
 ;; org mode
 (use-package org
   :ensure t)
