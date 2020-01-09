@@ -24,6 +24,11 @@
   :ensure t
   :config (which-key-mode))
 
+;; helm-descbinds: find key bindings
+(use-package helm-descbinds
+  :ensure t
+  :config (helm-descbinds-mode))
+
 ;; org mode
 (use-package org
   :ensure t)
