@@ -34,6 +34,17 @@
 (use-package go-mode
   :ensure t)
 
+;; tuareg for Ocaml
+(use-package tuareg
+  :ensure t)
+
+;; make sure environment variables in Emacs look the same as in user's shell
+;; https://github.com/purcell/exec-path-from-shell
+;; I need this package because of this issue: https://stackoverflow.com/questions/25934406/tuareg-mode-cant-find-ocaml
+(use-package exec-path-from-shell
+  :ensure t
+  :config (when (memq window-system '(mac ns x)) (exec-path-from-shell-initialize)))
+
 ;; org mode
 (use-package org
   :ensure t)
