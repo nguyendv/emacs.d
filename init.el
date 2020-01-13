@@ -85,3 +85,6 @@
 ;; Set relative line number
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
+
+;; Toggle reverting buffer when the file changes
+(global-auto-revert-mode t)
