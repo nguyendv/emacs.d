@@ -29,6 +29,11 @@
   :ensure t
   :config (helm-descbinds-mode))
 
+;; go-mode
+;; https://github.com/dominikh/go-mode.el
+(use-package go-mode
+  :ensure t)
+
 ;; org mode
 (use-package org
   :ensure t)
