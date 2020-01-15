@@ -29,6 +29,11 @@
   :ensure t
   :config (helm-descbinds-mode))
 
+;; go-mode
+;; https://github.com/dominikh/go-mode.el
+(use-package go-mode
+  :ensure t)
+
 ;; tuareg for Ocaml
 (use-package tuareg
   :ensure t)
@@ -42,7 +47,6 @@
 (use-package exec-path-from-shell
   :ensure t
   :config (when (memq window-system '(mac ns x)) (exec-path-from-shell-initialize)))
-
 
 ;; org mode
 (use-package org
@@ -95,3 +99,6 @@
 ;; Set relative line number
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
+
+;; Toggle reverting buffer when the file changes
+(global-auto-revert-mode t)
