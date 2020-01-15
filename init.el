@@ -32,6 +32,9 @@
 ;; tuareg for Ocaml
 (use-package tuareg
   :ensure t)
+;; Integration with the `dune` build system
+(use-package dune
+  :ensure t)
 
 ;; make sure environment variables in Emacs look the same as in user's shell
 ;; https://github.com/purcell/exec-path-from-shell
