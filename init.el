@@ -14,6 +14,14 @@
   :ensure t
   :config (editorconfig-mode 1))
 
+;; company-mode
+(use-package company
+  :ensure t
+  :config
+  (global-company-mode)
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1))
+
 ;; load evil
 (use-package evil
   :ensure t
