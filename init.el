@@ -53,6 +53,13 @@
   :ensure t
   :config (when (memq window-system '(mac ns x)) (exec-path-from-shell-initialize)))
 
+;; auto update package when start up
+;; https://github.com/rranelli/auto-package-update.el
+;; this SLOW DOWN your start up
+(use-package auto-package-update
+  :ensure t
+  :config (auto-package-update-maybe))
+
 ;; org mode
 (use-package org
   :ensure t)
