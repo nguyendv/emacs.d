@@ -9,6 +9,11 @@
   (package-install 'use-package))
 (require 'use-package)
 
+;; editorconfig
+(use-package editorconfig
+  :ensure t
+  :config (editorconfig-mode 1))
+
 ;; load evil
 (use-package evil
   :ensure t
