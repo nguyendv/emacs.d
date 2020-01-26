@@ -19,8 +19,15 @@
   :ensure t
   :config
   (global-company-mode)
-  (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 1))
+  (setq company-idle-delay 0) ;; show suggestions immediately
+  (setq company-minimum-prefix-length 1) ;; show suggestions right after 1 character
+  (company-tng-configure-default) ;; use TAB to circle through suggestions
+  )
+
+;; highlight TODO and similar keywords
+(use-package hl-todo
+  :ensure t
+  :config (global-hl-todo-mode))
 
 ;; load evil
 (use-package evil
